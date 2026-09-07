@@ -1,0 +1,68 @@
+{
+  "source": "github.com/starry789/project-2",
+  "capabilities": [
+    {
+      "capability": "frontend_pages",
+      "source": "app/page.tsx",
+      "outcome": "migrated_to_tanstack_start_route",
+      "status": "complete",
+      "next_action": "verify_preview_rendering"
+    },
+    {
+      "capability": "ui_components",
+      "source": "components/ui/*",
+      "outcome": "reused_existing_shadcn_components",
+      "status": "complete",
+      "next_action": "none"
+    },
+    {
+      "capability": "styling_design_tokens",
+      "source": "app/globals.css",
+      "outcome": "merged_into_styles_css",
+      "status": "complete",
+      "next_action": "none"
+    },
+    {
+      "capability": "database_schema",
+      "source": "DESIGN.md",
+      "outcome": "not_implemented_in_source",
+      "status": "not_applicable",
+      "next_action": "none"
+    },
+    {
+      "capability": "database_records",
+      "source": "record_export",
+      "outcome": "absent",
+      "status": "not_applicable",
+      "next_action": "none"
+    },
+    {
+      "capability": "server_api",
+      "source": "DESIGN.md",
+      "outcome": "not_implemented_in_source",
+      "status": "not_applicable",
+      "next_action": "none"
+    },
+    {
+      "capability": "auth",
+      "source": "source_inspection",
+      "outcome": "none_required",
+      "status": "not_applicable",
+      "next_action": "none"
+    },
+    {
+      "capability": "third_party_integrations",
+      "source": "source_inspection",
+      "outcome": "none_required",
+      "status": "not_applicable",
+      "next_action": "none"
+    },
+    {
+      "capability": "environment_variables",
+      "source": "source_inspection",
+      "outcome": "none_required",
+      "status": "not_applicable",
+      "next_action": "none"
+    }
+  ]
+}
