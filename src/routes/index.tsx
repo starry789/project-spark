@@ -226,7 +226,7 @@ function Index() {
     };
   }, [form]);
 
-  const selectReduction = (target: string) => {
+  const selectReduction = (target: keyof typeof reductions) => {
     update("reductionTarget", target);
     update("reductionRate", reductions[target].rate);
   };
