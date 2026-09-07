@@ -495,7 +495,7 @@ function Index() {
                     ? `매주 ${form.weekdays.map((day) => weekdayLabels[day]).join("·")}요일 사용 (${calc.useCount}회)`
                     : `기간 내 매일 사용 (${calc.useCount}회)`}
                   <br />
-                  {form.facility} · {form.purpose} · {calc.facility.note}
+                  {form.facility} · {form.purpose} · {calc.facility?.note ?? ""}
                   <br />
                   {won(calc.unitRate)} × {calc.monthUnit ? `${calc.months}개월` : `${calc.hours}시간 × ${calc.useCount}회`} {form.heating && !calc.monthUnit ? " + 냉난방기 20%" : ""}
                   <br />
