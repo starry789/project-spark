@@ -228,7 +228,7 @@ function Index() {
 
   const selectReduction = (target: keyof typeof reductions) => {
     update("reductionTarget", target);
-    update("reductionRate", reductions[target].rate);
+    update("reductionRate", reductions[target]?.rate ?? 0);
   };
 
   const toggleWeekday = (day: number) =>
