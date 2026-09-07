@@ -430,7 +430,7 @@ function Index() {
                   </div>
                   <div className="grid gap-4 md:grid-cols-2">
                     <Field label="감면 대상">
-                      <Select value={form.reductionTarget} onChange={selectReduction}>
+                      <Select value={form.reductionTarget} onChange={(v) => selectReduction(v as keyof typeof reductions)}>
                         {Object.keys(reductions).map((item) => (
                           <option key={item}>{item}</option>
                         ))}
