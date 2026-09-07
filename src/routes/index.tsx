@@ -44,7 +44,7 @@ type FormData = {
   applicant: string;
   phone: string;
   address: string;
-  facility: string;
+  facility: keyof typeof facilities;
   purpose: string;
   startDate: string;
   endDate: string;
