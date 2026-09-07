@@ -611,7 +611,7 @@ function LedgerView() {
             </thead>
             <tbody>
               {rows.map((row) => (
-                <tr key={row[0] + row[1]} className="border-t border-border">
+                <tr key={row.join("-")} className="border-t border-border">
                   {row.map((cell, index) => (
                     <td key={cell} className={`px-5 py-4 ${index === 6 ? "font-bold text-primary" : "text-muted-foreground"}`}>
                       {cell}
