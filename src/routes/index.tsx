@@ -354,7 +354,7 @@ function Index() {
                   </div>
                   <div className="grid gap-4 md:grid-cols-2">
                     <Field label="사용 시설명">
-                      <Select value={form.facility} onChange={(v) => update("facility", v)}>
+                      <Select value={form.facility} onChange={(v) => update("facility", v as keyof typeof facilities)}>
                         {Object.keys(facilities).map((item) => (
                           <option key={item}>{item}</option>
                         ))}
