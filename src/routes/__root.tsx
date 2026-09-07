@@ -77,6 +77,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
+      { name: "robots", content: "noindex, nofollow" },
       { title: "학교시설 사용허가·사용료 산출 시스템" },
       { name: "description", content: "서울특별시교육청 학교시설 사용 허가 및 사용료 산출 행정 도구" },
       { name: "author", content: "Lovable" },
