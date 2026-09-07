@@ -186,7 +186,7 @@ function Index() {
             : facilities["운동장 잔디 포함 (단기)"]
           : facilities[form.facility];
 
-    const facility = rateFacility;
+    const facility = rateFacility ?? facilities["일반교실"];
     const unitRate = form.purpose === "생활체육·평생교육" ? facility.sports : facility.general;
     const monthUnit = form.facility === "샤워시설" || form.facility === "창고(물품 보관)";
     const months = Math.max(
