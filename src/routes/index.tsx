@@ -54,7 +54,7 @@ type FormData = {
   usagePattern: "daily" | "weekly";
   weekdays: number[];
   heating: boolean;
-  reductionTarget: string;
+  reductionTarget: keyof typeof reductions;
   reductionRate: number;
   notes: string;
 };
